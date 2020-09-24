@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <main>
+        <title id="title">JN4D Survey Form</title><!--User Story #1-->
+        <link rel="stylesheet" href="survey.css">
+        <h1>JN4D Survey Form</h1>
+        <p id="description">Please take a few moments to complete this survey</p><!--User Story #2-->
+        
+        <form id="survey-form"><!--User Story #3-->
+            <div class="group">
+                <label id="name-label">Name</label><br><!--User Story #10-->
+                <input id="name" type="text" class="control" placeholder="Enter your name" required><br><br><!--User Story #4--><!--User Story #11-->
+            </div>
+
+            <div class="group">
+                <label id="email-label">Email Address</label><br>
+                <input id="email" type="email" class="control" placeholder="Enter your email" required><br><br> <!--User Story #5--><!--User Story #6-->
+            </div>
+                
+            <div class="group">
+                <label id="number-label">Number of Windows</label><br>
+                <input id="number" type="number" class="control" placeholder="Enter your number" min="1" max="99" required><br><br><!--User Story #7--><!--User Story #8--><!--User Story #9-->
+            </div>
+                
+            <div class="group">
+                <label for="product">Choose the best Home Decor Product:</label><br>
+                <select name="product" id="dropdown"><!--User Story #12-->
+                <option disabled selected value>Select product</option>
+                <option value="blinds">Blinds</option>
+                <option value="curtains">Curtains</option>
+                <option value="acordion">Acordion</option>
+                <option value="wallpaper">Wallpaper</option>
+                </select><br><br>
+            </div>
+            
+            <div class="group">
+                <label>Would you recommend JN4D?</label><br>
+                <label for="definitely"><input id="yes" class="radioinput" type="radio"  name="name" checked>Yes</label><br>
+                <label for="maybe"><input id="maybe" class="radioinput" type="radio" name="name">Maybe</label><br>
+                <label for="notsure"><input id="no" class="radioinput" type="radio" name="name">No</label><br><br><!--User Story #13-->
+            </div>          
+
+            <div class="group">
+                <label>How did you know about JN4D? (Check all that apply)</label><br>
+                <label><input id="facebook" value="Facebook" type="checkbox" class="checkboxinput" name="improved">Facebook</label><br>
+                <label><input id="twitter" value="Twitter" type="checkbox" class="checkboxinput" name="improved">Twitter</label><br>
+                <label><input id="instagram" value="Instagram" type="checkbox" class="checkboxinput" name="improved">Instagram</label><br>
+                <label><input id="youtube" value="Youtube" type="checkbox" class="checkboxinput" name="improved">Youtube</label><br>
+                <label><input id="friends" value="Friends" type="checkbox" class="checkboxinput" name="improved">Friends</label><br>
+                <label><input id="relatives" value="Relatives" type="checkbox" class="checkboxinput" name="improved">Relatives</label><br>
+                <label><input id="office" value="Office" type="checkbox" class="checkboxinput" name="improved">Office</label><br>
+                <label><input id="facebookads" class="checkboxinput" value="Facebook Ads" type="checkbox" name="improved">Facebook Ads</label><br>
+                <label><input id="website" class="checkboxinput" value="Website" type="checkbox" name="improved">Website</label><br>
+                <label><input id="others" class="checkboxinput" value="Others" type="checkbox" name="improved">Others</label><br>
+                <!--User Story #14-->
+            </div>
+            
+            <div class="group">
+                <label>Any comments or suggestions?</label><br>
+                <textarea id="comments" class="textareacomment" placeholder="Enter your comments"></textarea><br><!--User Story #15-->
+            </div>
+            
+            <div class="group">
+                <button id="submit" class="submitbutton" type="submit">Submit</button><br><!--User Story #16-->
+            </div>
+            
+        </form>
+    </main>
+</html>
